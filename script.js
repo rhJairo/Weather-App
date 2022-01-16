@@ -34,7 +34,7 @@ function changeColor(){
 }
 
 
-const api = "75cb5e4667553ccfd80fbb21f8ba6aee";
+const api = "";
 
 window.addEventListener('load', () => {
     let long;
@@ -58,10 +58,13 @@ window.addEventListener('load', () => {
             const place = data.name;
             const { main } = data.weather[0];
             
+            const temp1 = parseInt(temp);
             const fahrenheit = (temp * 9) / 5 + 32;
 
+
+
             loc.textContent = `${place}`;
-            tempC.textContent = `${temp}`;
+            tempC.textContent = `${temp1}° C`;
             weather.textContent = `${main}`;
 
             document.getElementById("weekday").innerHTML = weekday[day];

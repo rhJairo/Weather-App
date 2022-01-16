@@ -36,10 +36,15 @@ header {
 }
 
 footer {
+    margin: 1em;
+    align-self: end;
     grid-area: footer;
 }
 
-
+i{
+    margin: 0.5em;
+    align-self: center;
+}
 
 .l-column {
     grid-area: l-column;
@@ -73,28 +78,32 @@ footer {
     grid-template-rows: 12% 35% 35% 12%;
 }
 
-#content-wrapper .city {
+.block{
+    display:flex;
     padding: 0.5em;
     margin: 0;
     align-self: center;
     justify-self: end;
     font-size: 4em;
 }
-#content-wrapper .measure {
+.city {
+    
+}
+.measure {
     padding: 0;
     margin: 0;
     align-self: center;
     justify-self: center;
     font-size: 9em;
 }
-#content-wrapper .weather {
+.weather {
     padding: 0;
     margin: 0;
     align-self: start;
     justify-self: center;
     font-size: 4em;
 }
-#content-wrapper .day {
+.day {
     padding: 0.5em;
     margin: 0;
     align-self: end;
