@@ -1,7 +1,7 @@
 /* ------------------------------ Variables ---------------------------*/
 .elements{
-    --lower-color: #8080ff;
-    --upper-color: #80ffdf; 
+    --lower-color: #180B29;
+    --upper-color: #180B29; 
 }
 
 /* ------------------------------ Layout ---------------------------*/
@@ -38,6 +38,8 @@ header {
 footer {
     grid-area: footer;
 }
+
+
 
 .l-column {
     grid-area: l-column;
@@ -122,6 +124,10 @@ footer {
     #content-wrapper{
         grid-column: 2/5;
         grid-row: 2/5;
+    }
+
+    h4 {
+        font-size: 4vw;
     }
 }
 
