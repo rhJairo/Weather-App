@@ -1,11 +1,18 @@
+/* ------------------------------ Variables ---------------------------*/
+.elements{
+    --lower-color: #8080ff;
+    --upper-color: #80ffdf; 
+}
+
 /* ------------------------------ Layout ---------------------------*/
 
 body {
+    color: floralwhite;
     margin: 0;
     padding: 0;
     overflow: hidden;
     height: 100vh;
-    background: #8d6edc;
+    background: #180B29;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -25,33 +32,27 @@ body {
 }
 
 header {
-    background: lemonchiffon;
     grid-area: header;
 }
 
 footer {
-    background: lemonchiffon;
     grid-area: footer;
 }
 
 .l-column {
-    background: aquamarine;
     grid-area: l-column;
 }
 .r-column {
-    background: aquamarine;
     grid-area: r-column;
 }
 
 .bottom {
-    background: darkred;
     grid-area: bottom;
 }
 
 /* ------------------------------ Main ---------------------------*/
 
 .wrapper {
-    background:#ccccff;
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(5, 20%);
@@ -60,10 +61,9 @@ footer {
 }
 
 #content-wrapper {
-    color: floralwhite;
     grid-column: 2/5;
     grid-row: 1/6;
-    background: linear-gradient(0deg, hsl(165, 100%, 75%), hsl(234, 100%, 75%));
+    background: linear-gradient(-15deg, var(--lower-color), var(--upper-color));
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border-radius: 20px;
     display: grid;
@@ -124,3 +124,6 @@ footer {
         grid-row: 2/5;
     }
 }
+
+/* ------------------------------ Animations ---------------------------*/
+
